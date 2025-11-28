@@ -71,9 +71,9 @@ class CartItem(models.Model):
 
 class Order(models.Model):
     STATUS = [
-        ('pendding','Pendding')
-        ('processing','Processing')
-        ('shipped','Shipped')
+        ('pendding','Pendding'),
+        ('processing','Processing'),
+        ('shipped','Shipped'),
         ('delivered','Delivered')
     ]
     user = models.ForeignKey(User,on_delete=models.CASCADE)
